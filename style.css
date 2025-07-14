@@ -14,7 +14,34 @@ p {
 
 nav {
     text-align: center;
-    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 10px solid;
+    border-radius: 10vh;
+    background-color: rgb(173, 216, 230);
+    margin-bottom: 5vh;
+}
+
+nav a {
+    font-size: 2vw;
+    border: 10px solid yellow;
+    border-radius: 4vh;
+    padding: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    background-color: aquamarine;
+}
+
+.szoveg img {
+    width: 100%;
+}
+
+#tarolo div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 #gyomber {
@@ -43,6 +70,17 @@ nav {
     border-radius: 10vh;
     padding: 50px;
 
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        font-size: 125%;
+    }
+
+    nav {
+        grid-template-columns: 1fr;
+    }
 }
 
 
